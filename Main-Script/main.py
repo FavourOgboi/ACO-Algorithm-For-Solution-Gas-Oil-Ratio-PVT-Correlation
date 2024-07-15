@@ -1,7 +1,7 @@
 import sys
 import os
 
-# Add the parent directory of 'Linear_Regression_Module' to the sys.path
+# Adding the parent directory of 'Linear_Regression_Module' to the sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from AntColony_PyCode.ant_colony_optimization import AntColonyOptimization
@@ -23,11 +23,11 @@ def main():
         {'bubble_point_pressure': 200, 'api_gravity': 37, 'gas_gravity': 0.743, 'reservoir_temperature': 129, 'actual_gor': 155},
     ]
 
-    # Create ACO instance and run
+    # Creating ACO instance and run
     aco = AntColonyOptimization(pvt_data, num_ants=10, num_iterations=100, decay=0.95, alpha=1, beta=2)
     shortest_path, shortest_cost = aco.run()
 
-    # Extract optimized parameters from the shortest path found
+    # Extracting optimized parameters from the shortest path found
     optimized_indices = shortest_path
     optimized_parameters = [pvt_data[i]['actual_gor'] for i in optimized_indices]
     print(f"Optimized parameters: {optimized_parameters}")
@@ -45,7 +45,7 @@ def main():
     print("Enter reservoir temperature:")
     reservoir_temperature = float(input())
 
-    # Predict the GOR for new input values using the fitted model
+    # Predicting the GOR for new input values using the fitted model
     estimated_gor = predict_gor(model, bubble_point_pressure, api_gravity, gas_gravity, reservoir_temperature)
     if estimated_gor is not None:
         print(f"Estimated GOR: {estimated_gor}")
