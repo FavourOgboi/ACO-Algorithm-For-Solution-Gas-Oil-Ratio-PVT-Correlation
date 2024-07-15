@@ -16,8 +16,10 @@ def main():
     shortest_path, shortest_cost = aco.run()
 
     # Extracting optimized parameters from the shortest path found
-    optimized_indices = shortest_path
-    optimized_parameters = [pvt_data[i]['actual_gor'] for i in optimized_indices]
+    optimized_parameters = []
+    for i in shortest_path:
+        optimized_parameters.append(pvt_data[i]['actual_gor'])
+
     print(f"Optimized parameters: {optimized_parameters}")
 
     # Fit a linear regression model
