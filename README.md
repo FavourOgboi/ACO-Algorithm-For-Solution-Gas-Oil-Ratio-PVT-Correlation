@@ -6,7 +6,7 @@
 
 ## Project Overview
 
-This project, developed by David, a final-year student at the Federal University of Petroleum Resources Effurun (FUPRE), utilizes an Ant Colony Optimization (ACO) algorithm to predict the Gas-Oil Ratio (GOR) based on PVT (Pressure-Volume-Temperature) data. By mimicking the foraging behavior of ants, the algorithm optimizes the estimation process, making it applicable to various challenges in petroleum engineering.
+This project, developed by David, a final-year student at the Federal University of Petroleum Resources Effurun (FUPRE), utilizes an Ant Colony Optimization (ACO) algorithm to estimate the Gas-Oil Ratio (GOR) based on PVT (Pressure-Volume-Temperature) data. By mimicking the foraging behavior of ants, the algorithm optimizes the estimation process, making it applicable to various challenges in petroleum engineering.
 
 ### Key Features
 
