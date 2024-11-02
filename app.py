@@ -62,7 +62,7 @@ selected = st.sidebar.radio("Navigation", ["Introduction", "Volvo ACO Algorithm"
 
 if selected == "Introduction":
     st.title('Ant Colony Optimization for GOR Calculation')
-    st.image("C:/Users/hp/Documents/GitHub/ACO-Algorithm-For-Solution-Gas-Oil-Ratio-PVT-Correlation/Image/1701501705964.jfif", caption="Project Overview")
+    st.image("Image/1701501705964.jfif", caption="Project Overview")
     
     st.write("""
     Hello, this is my research, which aims to investigate the creative use of the Ant Colony Optimization (ACO) algorithm to determine the Gas-Oil Ratio (GOR). GOR is a crucial metric in the oil and gas sector that has a big impact on both economic viability and production efficiency.
@@ -104,7 +104,7 @@ elif selected == "Volvo ACO Algorithm":
     """)
     
     # Path to the ACO notebook
-    aco_notebook_path = "C:/Users/hp/Documents/GitHub/ACO-Algorithm-For-Solution-Gas-Oil-Ratio-PVT-Correlation/volvo-data-ACO-algorithm/Volvo-ACO-Algorithm-Explained.ipynb"
+    aco_notebook_path = "volvo-data-ACO-algorithm/Volvo-ACO-Algorithm-Explained.ipynb"
     
     # Convert and display the ACO notebook
     try:
@@ -128,7 +128,7 @@ elif selected == "PVT ACO Algorithm":
     """)
     
     # Path to the ACO notebook
-    aco_notebook_path = "C:/Users/hp/Documents/GitHub/ACO-Algorithm-For-Solution-Gas-Oil-Ratio-PVT-Correlation/IpynbFolder/ACO_Algorithm_Steps_Explained.ipynb"
+    aco_notebook_path = "IpynbFolder/ACO_Algorithm_Steps_Explained.ipynb"
     
     # Convert and display the ACO notebook
     try:
@@ -145,7 +145,7 @@ elif selected == "Data Analysis":
     """)
 
     # Path to the Data Analysis notebook
-    data_analysis_notebook_path = 'C:/Users/hp/Documents/GitHub/ACO-Algorithm-For-Solution-Gas-Oil-Ratio-PVT-Correlation/volvo-data-ACO-algorithm/Exploratory-Data-Analysis-Volvo.ipynb'
+    data_analysis_notebook_path = 'volvo-data-ACO-algorithm/Exploratory-Data-Analysis-Volvo.ipynb'
 
     # Convert and display the Data Analysis notebook
     try:
@@ -180,6 +180,6 @@ elif selected == "GOR Calculation":
 
 elif selected == "Institution Student Project":
     st.title('Institution')
-    st.image("C:/Users/hp/Documents/GitHub/ACO-Algorithm-For-Solution-Gas-Oil-Ratio-PVT-Correlation/Image/fupre_logo.jpg", caption="FUPRE Logo")
+    st.image("Image/fupre_logo.jpg", caption="FUPRE Logo")
     st.write("""This project is part of a final year project at the Federal University of Petroleum Resources Effurun (FUPRE).
     It aims to leverage advanced algorithms for practical applications in the oil and gas industry.""")
