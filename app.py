@@ -14,9 +14,6 @@ from Linear_Regression_Module.linear_regression_model import fit_linear_regressi
 # getting PVT data
 from pvt_Data.pvt_data import pvt_data
 
-# Load datasets
-volvo_data_path = 'C:/Users/hp/Documents/GitHub/ACO-Algorithm-For-Solution-Gas-Oil-Ratio-PVT-Correlation/pvt_Data/cleaned_production_data.csv'
-volvo_data = pd.read_csv(volvo_data_path)
 
 def predict_gor_with_aco(pvt_data, bubble_point_pressure, api_gravity, gas_gravity, reservoir_temperature):
     # Adjust ACO parameters for better tuning
