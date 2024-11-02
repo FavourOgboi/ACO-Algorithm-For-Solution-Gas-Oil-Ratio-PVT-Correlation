@@ -6,14 +6,11 @@ from nbconvert import HTMLExporter
 import sys
 import os
 
-# Adding the parent directory of 'Linear_Regression_Module' to the sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from AntColony_PyCode.ant_colony_optimization import AntColonyOptimization
 from Linear_Regression_Module.linear_regression_model import fit_linear_regression_model, predict_gor
 # getting PVT data
 from pvt_Data.pvt_data import pvt_data
-
 
 def predict_gor_with_aco(pvt_data, bubble_point_pressure, api_gravity, gas_gravity, reservoir_temperature):
     # Adjust ACO parameters for better tuning
