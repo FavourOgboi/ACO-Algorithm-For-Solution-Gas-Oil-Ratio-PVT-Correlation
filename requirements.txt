@@ -1,0 +1,10 @@
+streamlit
+pandas
+matplotlib
+seaborn
+streamlit-option-menu
+scikit-learn
+catboost
+numpy
+nbconvert
+nbformat
