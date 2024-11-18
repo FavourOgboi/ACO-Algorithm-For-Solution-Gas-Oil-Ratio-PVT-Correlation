@@ -2,14 +2,6 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm 
 
-# Load the data from CSV
-pvt_data_df = pd.read_csv("C:/Users/hp/Documents/GitHub/ACO-Algorithm-For-Solution-Gas-Oil-Ratio-PVT-Correlation/pvt_Data/cleaned_production_data.csv")
-
-# Sample 50 rows from the DataFrame
-pvt_data_df = pvt_data_df.sample(n=100, random_state=1)
-
-print(pvt_data_df)
-
 class AntColonyOptimization:
     def __init__(self, pvt_data, num_ants=10, num_iterations=100, decay=0.95, alpha=1, beta=2):
         self.pvt_data = pvt_data
